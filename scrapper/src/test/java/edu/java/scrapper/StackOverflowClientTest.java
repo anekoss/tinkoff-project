@@ -3,7 +3,7 @@ package edu.java.scrapper;
 import com.github.tomakehurst.wiremock.client.WireMock;
 import com.github.tomakehurst.wiremock.junit5.WireMockExtension;
 import edu.java.client.StackOverflowClient;
-import edu.java.response.StackOverflowResponse;
+import edu.java.client.dto.StackOverflowResponse;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;

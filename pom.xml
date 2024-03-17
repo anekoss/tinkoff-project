@@ -281,6 +281,7 @@
                             <version>${checkstyle.version}</version>
                         </dependency>
                     </dependencies>
+
                     <configuration>
                         <configLocation>checkstyle.xml</configLocation>
                         <suppressionsLocation>checkstyle-suppressions.xml</suppressionsLocation>

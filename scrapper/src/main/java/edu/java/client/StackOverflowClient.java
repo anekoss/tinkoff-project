@@ -1,6 +1,6 @@
 package edu.java.client;
 
-import edu.java.response.StackOverflowResponse;
+import edu.java.client.dto.StackOverflowResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.reactive.function.client.WebClient;
 

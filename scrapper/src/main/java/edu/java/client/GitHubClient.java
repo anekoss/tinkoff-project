@@ -1,6 +1,6 @@
 package edu.java.client;
 
-import edu.java.response.GitHubResponse;
+import edu.java.client.dto.GitHubResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
