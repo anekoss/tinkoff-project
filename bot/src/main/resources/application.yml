@@ -1,6 +1,12 @@
 app:
   telegram-token: ${TOKEN}
 
+  client:
+    tg-сhat-client:
+      base-url: "http://localhost:8080/tg-chat"
+    links-client:
+      base-url: "http://localhost:8080/links"
+
 spring:
   application:
     name: bot
@@ -12,3 +18,8 @@ server:
 
 logging:
   config: classpath:log4j2-plain.xml
+
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui
