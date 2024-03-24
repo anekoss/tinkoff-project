@@ -18,8 +18,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class LinkRepositoryTest {
 
-    private Map<URL, Link> urlLinkMap = new HashMap<>();
-    private Map<URL, Set<Long>> linkUsersMap = new HashMap<>();
+    private final Map<URL, Link> urlLinkMap = new HashMap<>();
+    private final Map<URL, Set<Long>> linkUsersMap = new HashMap<>();
     private LinkRepository linkRepository = new LinkRepository(urlLinkMap, linkUsersMap);
 
     static Stream<Arguments> provideDataForTest() throws URISyntaxException, MalformedURLException {

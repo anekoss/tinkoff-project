@@ -4,6 +4,8 @@ app:
       base-url: "https://api.github.com"
     stackOverflow:
       base-url: "https://api.stackexchange.com"
+    botClient:
+      base-url: "http://localhost:8090"
   scheduler:
     enable: true
     interval: 10s
@@ -12,6 +14,14 @@ app:
 spring:
   application:
     name: scrapper
+  datasource:
+    url: jdbc:postgresql://localhost:5432/scrapper
+    username: postgres
+    password: postgres
+    driverClassName: org.postgresql.Driver
+  liquibase:
+    enabled: false
+
 
 server:
   port: 8080
@@ -19,3 +29,6 @@ server:
 logging:
   config: classpath:log4j2-plain.xml
 
+springdoc:
+  swagger-ui:
+    path: /swagger-ui

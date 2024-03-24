@@ -24,7 +24,7 @@ import static org.mockito.Mockito.when;
 public class UserRepositoryTest {
     private final Map<Long, User> userMapMock = Mockito.mock(Map.class);
     private final Map<Long, Set<URL>> userLinksMapMock = Mockito.mock(Map.class);
-    private UserRepository userRepository = new UserRepository(userMapMock, userLinksMapMock);
+    private final UserRepository userRepository = new UserRepository(userMapMock, userLinksMapMock);
 
     static Stream<Arguments> provideDataForTest() throws URISyntaxException, MalformedURLException {
         Map<Long, User> usersMap = new HashMap<>();
